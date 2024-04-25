@@ -1,0 +1,15 @@
+Pesquisa
+
+1-a maior e a menor altura dos habitantes; //pesquisa
+2-o homem e a mulher mais velha//pesquisa
+3-a média de altura das mulheres;//pesquisa
+4-o número de homens; //pesquisa
+5-A porcentagem de homens e de mulheres//pesquisa
+6-A porcentagem de indivíduos do sexo feminino cuja idade esteja entre 18 e 35
+anos, inclusive, e que tenham olhos verdes e cabelos louros//entrevistado-perfil e
+pesquisa-porcetagem
+
+
+classes:
+-Entrevistado: nome, altura, idade, sexo, corCabelo, corOlhos
+-Pesquisa

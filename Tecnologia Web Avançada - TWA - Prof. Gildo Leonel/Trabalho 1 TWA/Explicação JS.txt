@@ -1,0 +1,29 @@
+let imagem = [...]: Isso cria um array chamado imagem que contém URLs de imagens de escudos de times de futebol.
+
+function shuffleArray(array) {...}: Isso define uma função chamada shuffleArray que embaralha um array usando o método .sort() com uma função de comparação que gera números aleatórios.
+
+const img = document.querySelector(".imagem"): Isso seleciona um elemento HTML com a classe "imagem" e o armazena na variável img.
+
+let vetorImg1 = []; e let vetorImg2 = [];: Essas linhas criam dois arrays vazios chamados vetorImg1 e vetorImg2 que serão usados para comparar as imagens do jogo.
+
+function iniciarImagens() {...}: Essa função é responsável por iniciar o jogo. Ela embaralha o array imagem, cria elementos <img> para exibir as imagens na tela e as adiciona ao elemento img.
+
+function iniciarImagens2() {...}: Essa função também inicia o jogo, mas ela embaralha o array imagem novamente e substitui as imagens nos elementos <img> criados pela função iniciarImagens().
+
+const minutos = ..., const segundos = ..., ...: Essas linhas selecionam elementos HTML, como minutos, segundos, botão iniciar, etc., e os armazenam em variáveis para facilitar o acesso.
+
+let min = 0, sec = 8, milisec = 0;: Isso inicializa as variáveis de tempo para o cronômetro do jogo.
+
+let intervalo;: Isso cria uma variável para armazenar o identificador do intervalo usado no cronômetro.
+
+let parar = false; e let start = true;: Essas variáveis são usadas para controlar o estado do jogo, indicando se o jogo deve ser interrompido ou iniciado.
+
+function iniciarJogo() {...}: Essa função inicia o jogo quando chamada. Ela começa a exibir imagens, inicia o cronômetro e controla o tempo restante para o jogador.
+
+function formatCronometro(tempo) {...} e function formatMilisec(tempo) {...}: Essas funções formatam o tempo em minutos, segundos e milissegundos, garantindo que eles tenham dois dígitos (com preenchimento de zero) e três dígitos, respectivamente.
+
+function removeIMG() {...}: Essa função lida com a interação do jogador. Quando o jogador clica em uma imagem, ela verifica se a correspondência está correta e atualiza o placar. Se o jogador acertar todas as correspondências ou cometer um erro, o jogo é encerrado.
+
+function pontuacaoVitoria() {...}: Essa função calcula a pontuação do jogador, verificando quantas correspondências corretas ele fez.
+
+Em resumo, esse código é um jogo de correspondência de imagens com um cronômetro e lógica para determinar quando o jogo termina, se o jogador ganha ou perde. As funções são usadas para iniciar o jogo, atualizar o tempo, verificar a correspondência de imagens e calcular a pontuação do jogador.

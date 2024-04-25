@@ -1,0 +1,34 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Jogos [] jogos = new Jogos [3];
+        double soma = 0, media;
+        int quantJogos = 0,i;
+
+        for(i=0;i<jogos.Length;i++)
+        {
+            jogos[i] = new Jogos();
+            Console.WriteLine("Jogo {0}:", i+1);
+            Console.Write("Adversario: ");
+            jogos[i].Adversarios = Console.ReadLine();
+
+            Console.Write("Pontos: ");
+            jogos[i].Pontos = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Quedas: ");
+            jogos[i].Quedas = Convert.ToInt32(Console.ReadLine());
+
+            soma+=jogos[i].Quedas;
+
+        }
+        media = soma / jogos.Length;
+        Console.WriteLine("Media de quedas: {0:n2}", media);
+        for(i=0;i<jogos.Length;i++)
+        {
+            if(jogos[i].Quedas < media)
+            quantJogos++;
+        }
+        Console.Write("O numero de jogos com queda abaixo da media é {0}.", quantJogos);
+    }
+}

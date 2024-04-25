@@ -1,0 +1,64 @@
+display: grid;: Configura o elemento <body> como uma grade.
+grid-template-rows: auto 1fr auto;: Define três linhas na grade, com a primeira e a terceira com alturas automáticas (seu tamanho é definido pelo conteúdo) e a segunda preenchendo o espaço restante igualmente.
+grid-row: 1fr;: Atribui uma altura de 1fr (uma fração do espaço disponível) à linha única da grade.
+grid-template-areas: Define a estrutura da grade, especificando áreas nomeadas que são usadas posteriormente.
+.jogo1: Isso se refere a elementos com a classe .jogo1.
+
+display: grid;: Configura os elementos com a classe .jogo1 como uma grade.
+flex-direction: column;: Define a direção de empilhamento dos elementos filhos como uma coluna.
+width: 80%;: Define a largura dos elementos como 80% da largura do contêiner pai.
+align-items: center;: Centraliza os elementos verticalmente.
+justify-items: center;: Centraliza os elementos horizontalmente.
+padding: 50px 50px;: Define o preenchimento (espaçamento interno) dos elementos.
+#titulo-game: Isso se refere ao elemento com o ID titulo-game.
+
+color: #edc711;: Define a cor do texto como amarelo.
+grid-area: titulo-game;: Especifica que esse elemento pertence à área de grade chamada titulo-game.
+text-align: center;: Centraliza o texto horizontalmente.
+padding: 10px;: Adiciona um espaçamento interno de 10px.
+font-size: 24px;: Define o tamanho da fonte como 24 pixels.
+font-family: "Alegreya";: Define a fonte como "Alegreya".
+.img: Isso se refere a elementos com a classe .img.
+
+Define várias propriedades de estilo, incluindo altura, largura, borda arredondada, cursor ao passar o mouse, margens, e um efeito de escala ao passar o mouse.
+#menu: Isso se refere ao elemento com o ID menu.
+
+color: #edc711;: Define a cor do texto como amarelo.
+grid-area: menu;: Especifica que esse elemento pertence à área de grade chamada menu.
+#instrucoes: Isso se refere ao elemento com o ID instrucoes.
+
+color: #f2f2ee;: Define a cor do texto como um tom de cinza claro.
+text-align: center;: Centraliza o texto horizontalmente.
+#historia: Isso se refere ao elemento com o ID historia.
+
+color: #f2f2ee;: Define a cor do texto como um tom de cinza claro.
+#encarar: Isso se refere ao elemento com o ID encarar.
+
+text-align: center;: Centraliza o texto horizontalmente.
+#rodape: Isso se refere ao elemento com o ID rodape.
+
+background-color: #b8b7ba;: Define a cor de fundo como um tom de cinza.
+text-align: center;: Centraliza o texto horizontalmente.
+.container: Isso se refere a elementos com a classe .container.
+
+display: flex;: Configura os elementos com a classe .container como flex containers.
+flex-direction: column;: Define a direção de empilhamento dos elementos filhos como uma coluna.
+align-items: center;: Centraliza os elementos verticalmente.
+gap: 2rem;: Adiciona espaçamento entre os elementos filho.
+.cronometro: Isso se refere a elementos com a classe .cronometro.
+display: flex;: Configura os elementos com a classe .cronometro como flex containers.
+font-size: 50px;: Define o tamanho da fonte como 50 pixels.
+grid-area: cronometro;: Especifica que esse elemento pertence à área de grade chamada cronometro.
+Define várias propriedades de estilo, como cor de fundo, borda, borda arredondada e cor do texto.
+.tempo e .separador: São estilizações para elementos com as classes .tempo e .separador, mas suas definições exatas não estão presentes no código fornecido.
+
+.botoes: Isso se refere a elementos com a classe .botoes.
+
+display: flex;: Configura os elementos com a classe .botoes como flex containers.
+gap: 1rem;: Adiciona espaçamento entre os elementos filho.
+.botao: Isso se refere a elementos com a classe .botao.
+Define várias propriedades de estilo, incluindo preenchimento, tamanho da fonte, borda arredondada, cursor ao passar o mouse e uma transição suave ao passar o mouse.
+#brasileirao e outras classes/IDs relacionados a times de futebol: Esses se referem a elementos com os IDs ou classes correspondentes e definem várias áreas na grade com nomes de times de futebol. Cada um especifica uma área da grade onde os elementos relacionados a esses times serão posicionados. Por exemplo, #America refere-se a um elemento com o ID America, e ele ocupará a área de grade chamada America.
+
+
+

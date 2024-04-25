@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advanced Layout Demo</title>
+	<link rel="stylesheet" href="../fonts/fira_code/fira_code.css">
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+
+<body class="view">
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header class="masthead">
+	<div class="logo">GRID PILE</div>
+	<h2 class="site-title">Stacked CSS Grid Effect</h2>
+	</header><!-- .masthead -->
+
+	<main id="content" class="main-area">
+		<figure class="feature">
+			<img src="https://source.unsplash.com/w3lQVmuK8fw/1200x600" alt="Fox.">
+		</figure>
+		<section class="splash">
+			<div class="splash-content">
+				<h2 class="content-title">Magical content restructuring with CSS Grid stacks</h2>
+				<div class="splash-text">
+					<p>This example demonstrates how to reposition content in a view by stacking multiple grids on top of one another. The goal of the example is to retain a logical markup structure while still allowing content to be split up and positioned on the grid. Case in point: From a HTML semantics standpoint, the main area should come before the sidebar area, and both should live on the same level without extra wrappers. This demo shows how stacking two grids allows the sidebar items to appear as if they are placed on the same grid as the main content while they are in reality placed in a separate grid positioned within and superimposed on top of the original grid.</p>
+					<p>A detailed breakdown of this demo explaining the approach and how everything fits together can be found on <a href="https://www.linkedin.com/pulse/grid-pile-stacking-css-grids-impossible-layouts-rand-hendriksen">LinkedIn Pulse</a>.</p>
+				</div><!-- .splash-text -->
+			</div><!-- .splash-content -->
+		</section><!-- .splash -->
+
+		<section class="buckets">
+			<ul>
+				<li>
+					<img src="https://source.unsplash.com/KUfkX6gVwBU/600x400" alt="Fog over Oslo.">
+					<div class="bucket">
+						<h3 class="bucket-title">Grid is great</h3>
+						<p>CSS Grid is a two-dimensional layout tool. It is great for layout out content in a grid, and for laying out content in two dimensions.</p>
+					</div><!-- .bucket -->
+				</li>
+				<li>
+					<img src="https://source.unsplash.com/1jKjJjGgDG8/600x400" alt="Sunset over the Oslo fjord.">
+					<div class="bucket">
+						<h3 class="bucket-title">Flex is great too</h3>
+						<p>Grid is not always the right option for layuts. If for example you need to lay out a series of identical boxes like those you see here, Flex may be a better option.</p>
+					</div><!-- .bucket -->
+				</li>
+			</ul>
+		</section><!-- .buckets -->
+
+		<section class="more">
+			<section class="calendar">
+				<h2 class="month-name">	<time datetime="2023-06">June 2023</time></h2>
+				<div class="calendar-grid">
+					<div class="day-name" aria-hidden="true">Monday</div>
+					<div class="day-name" aria-hidden="true">Tuesday</div>
+					<div class="day-name" aria-hidden="true">Wednesday</div>
+					<div class="day-name" aria-hidden="true">Thursday</div>
+					<div class="day-name" aria-hidden="true">Friday</div>
+					<div class="day-name" aria-hidden="true">Saturday</div>
+					<div class="day-name" aria-hidden="true">Sunday</div>
+					<time datetime="2017-09-25" class="day previous"><span class="screen-reader-text">Monday September </span>29</time>
+					<time datetime="2017-09-26" class="day previous"><span class="screen-reader-text">Tuesday September </span>30</time>
+					<time datetime="2017-09-27" class="day previous"><span class="screen-reader-text">Wednesday September </span>31</time>
+					<time datetime="2017-09-28" class="day"><span class="screen-reader-text">Thursday September </span>1</time>
+					<time datetime="2017-09-29" class="day"><span class="screen-reader-text">Friday September </span>2</time>
+					<time datetime="2017-09-30" class="day"><span class="screen-reader-text">Saturday September </span>3</time>
+					<time datetime="2017-10-01" class="day"><span class="screen-reader-text">Sunday October </span>4</time>
+					<time datetime="2017-10-02" class="day"><span class="screen-reader-text">Monday October </span>5</time>
+					<time datetime="2017-10-03" class="day"><span class="screen-reader-text">Tuesday October </span>6</time>
+					<time datetime="2017-10-04" class="day"><span class="screen-reader-text">Wednesday October </span>7</time>
+					<time datetime="2017-10-05" class="day"><span class="screen-reader-text">Thursday October </span>8</time>
+					<time datetime="2017-10-06" class="day"><span class="screen-reader-text">Friday October </span>9</time>
+					<time datetime="2017-10-07" class="day"><span class="screen-reader-text">Saturday October </span>10</time>
+					<time datetime="2017-10-08" class="day"><span class="screen-reader-text">Sunday October </span>11</time>
+					<time datetime="2017-10-09" class="day"><span class="screen-reader-text">Monday October </span>12</time>
+					<time datetime="2017-10-10" class="day"><span class="screen-reader-text">Tuesday October </span>13</time>
+					<time datetime="2017-10-11" class="day"><span class="screen-reader-text">Wednesday October </span>14</time>
+					<time datetime="2017-10-12" class="day"><span class="screen-reader-text">Thursday October </span>15</time>
+					<time datetime="2017-10-13" class="day"><span class="screen-reader-text">Friday October </span>16</time>
+					<time datetime="2017-10-14" class="day"><span class="screen-reader-text">Saturday October </span>17</time>
+					<time datetime="2017-10-15" class="day"><span class="screen-reader-text">Sunday October </span>18</time>
+					<time datetime="2017-10-16" class="day"><span class="screen-reader-text">Monday October </span>19</time>
+					<time datetime="2017-10-17" class="day"><span class="screen-reader-text">Tuesday October </span>20</time>
+					<time datetime="2017-10-18" class="day"><span class="screen-reader-text">Wednesday October </span>21</time>
+					<time datetime="2017-10-19" class="day"><span class="screen-reader-text">Thursday October </span>22</time>
+					<time datetime="2017-10-20" class="day"><span class="screen-reader-text">Friday October </span>23</time>
+					<time datetime="2017-10-21" class="day"><span class="screen-reader-text">Saturday October </span>24</time>
+					<time datetime="2017-10-22" class="day"><span class="screen-reader-text">Sunday October </span>25</time>
+					<time datetime="2017-10-23" class="day"><span class="screen-reader-text">Monday October </span>26</time>
+					<time datetime="2017-10-24" class="day"><span class="screen-reader-text">Tuesday October </span>27</time>
+					<time datetime="2017-10-25" class="day"><span class="screen-reader-text">Wednesday October </span>28</time>
+					<time datetime="2017-10-26" class="day"><span class="screen-reader-text">Thursday October </span>29</time>
+					<time datetime="2017-10-27" class="day"><span class="screen-reader-text">Friday October </span>30</time>
+					<time datetime="2017-10-28" class="day next"><span class="screen-reader-text">Saturday October </span>1</time>
+					<time datetime="2017-10-29" class="day next"><span class="screen-reader-text">Sunday October </span>2</time>
+				</div><!-- .calendar-grid -->
+			</section><!-- .calendar -->
+		</section><!-- .more -->
+
+	</main>
+
+
+	<div class="twin">
+		<h2 class="content-title">First Sidebar Item</h2>
+		<p>This is the first of two sidebar sections. It appears as the first of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the <code>main</code> element. On medium screens it appears at the top of the left-hand sidebar. On wide screens it appears at the top of the left-hand sidebar.</p>
+	</div>
+	<div class="twin">
+		<h2 class="content-title">Second Sidebar Item</h2>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+		<p>This is the second of two sidebar sections. It appears as the second of two items in the sidebar <code>aside</code> element which is located after the <code>main</code> element in the HTML source order. On narrow screens it visually appears after the first sidebar item. On medium screens it appears as the second item of the left-hand sidebar. On wide screens it appears at the top of the right-hand sidebar.</p>
+	</div>
+
+
+	<footer class="colophon">
+		<aside>All photos: <a href="https://unsplash.com/@andozo" target="_blank" rel="nofollow">Andreas Rønningen</a>.</aside>
+		<aside>Content, layout, design, adapted from : <a href="https://twitter.com/mor10" target="_blank" rel="nofollow">Morten Rand-Hendriksen</a>.</aside>
+	</footer>
+		  
+
+</body><!-- .view -->
+
+</html>

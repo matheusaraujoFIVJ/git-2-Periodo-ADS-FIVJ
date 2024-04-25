@@ -1,0 +1,85 @@
+<div><h1 id="titulo-game"> MEMORY GAME CARDS BRASILEIRÃO 2023 </h1></div>: Define um cabeçalho principal da página, usando um elemento <h1> com o ID "titulo-game". Isso exibirá o título do jogo.
+
+<div id="brasileirao"><img src="./assets/images/Brasileirão.png" width="12%"></div>: Define um elemento <div> com o ID "brasileirao" e insere uma imagem "Brasileirão.png" da pasta "assets/images" que ocupa 12% da largura da tela.
+
+<div id="menu"><menu> Instruções &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; História</menu></div>: Define um menu com três itens (Instruções, Jogo e História) dentro de um elemento <div> com o ID "menu". Os itens são separados por espaços não quebráveis (&nbsp;) para criar espaçamento.
+
+<div id="instrucoes">: Inicia uma seção com o ID "instrucoes" onde são fornecidas instruções para jogar o jogo.
+
+<h3> Como jogar? </h3>: Define um subcabeçalho com o texto "Como jogar?".
+
+<p> ... </p>: Define parágrafos com instruções sobre como jogar o jogo.
+
+<div class="jogo">: Inicia uma seção com a classe "jogo" que parece estar relacionada ao jogo.
+
+<div class="container">: Cria um contêiner para o conteúdo do jogo.
+
+<div class="cronometro">: Cria uma seção para um cronômetro.
+
+<div class="tempo" id="minutos">00</div>: Define um elemento de exibição de minutos no cronômetro com o ID "minutos".
+
+<div class="separador">:</div>: Define um separador (dois pontos) no cronômetro.
+
+<div class="tempo" id="segundos">30</div>: Define um elemento de exibição de segundos no cronômetro com o ID "segundos".
+
+<div class="separador">:</div>: Outro separador.
+
+<div class="tempo" id="milisegundos">000</div>: Define um elemento de exibição de milissegundos no cronômetro com o ID "milisegundos".
+
+<div class="botoes">: Cria uma seção para botões relacionados ao jogo.
+
+<button class="botao" id="iniciar" onclick="iniciarJogo()">Iniciar</button>: Define um botão com a classe "botao", o ID "iniciar" e uma função JavaScript chamada "iniciarJogo()" quando o botão é clicado.
+
+<div class="imagem grid2 jogo1" id="jogo1"></div>: Define um elemento de imagem com a classe "imagem", "grid2" e "jogo1", e o ID "jogo1".
+
+</div>: Fecha a seção do jogo.
+
+<div id="historia">: Inicia a seção de história da página.
+
+<h2 id="titulo-historia"> História do MEMORY GAME CARDS BRASILEIRÃO 2023 </h2>: Define um subcabeçalho com o ID "titulo-historia" para a seção de história.
+
+<p> ...: Fornece informações sobre o jogo e sua relação com o Campeonato Brasileiro de 2023.
+
+<h3 id="encarar"> &nbsp;&nbsp;&nbsp;<strong> E aí torcedor, o que me diz? Vai encarar? </strong></h3>: Define um subcabeçalho com o ID "encarar" e um texto de desafio ao leitor.<div><h1 id="titulo-game"> MEMORY GAME CARDS BRASILEIRÃO 2023 </h1></div>: Define um cabeçalho principal da página, usando um elemento <h1> com o ID "titulo-game". Isso exibirá o título do jogo.
+
+<div id="brasileirao"><img src="./assets/images/Brasileirão.png" width="12%"></div>: Define um elemento <div> com o ID "brasileirao" e insere uma imagem "Brasileirão.png" da pasta "assets/images" que ocupa 12% da largura da tela.
+
+<div id="menu"><menu> Instruções &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; História</menu></div>: Define um menu com três itens (Instruções, Jogo e História) dentro de um elemento <div> com o ID "menu". Os itens são separados por espaços não quebráveis (&nbsp;) para criar espaçamento.
+
+<div id="instrucoes">: Inicia uma seção com o ID "instrucoes" onde são fornecidas instruções para jogar o jogo.
+
+<h3> Como jogar? </h3>: Define um subcabeçalho com o texto "Como jogar?".
+
+<p> ... </p>: Define parágrafos com instruções sobre como jogar o jogo.
+
+<div class="jogo">: Inicia uma seção com a classe "jogo" que parece estar relacionada ao jogo.
+
+<div class="container">: Cria um contêiner para o conteúdo do jogo.
+
+<div class="cronometro">: Cria uma seção para um cronômetro.
+
+<div class="tempo" id="minutos">00</div>: Define um elemento de exibição de minutos no cronômetro com o ID "minutos".
+
+<div class="separador">:</div>: Define um separador (dois pontos) no cronômetro.
+
+<div class="tempo" id="segundos">30</div>: Define um elemento de exibição de segundos no cronômetro com o ID "segundos".
+
+<div class="separador">:</div>: Outro separador.
+
+<div class="tempo" id="milisegundos">000</div>: Define um elemento de exibição de milissegundos no cronômetro com o ID "milisegundos".
+
+<div class="botoes">: Cria uma seção para botões relacionados ao jogo.
+
+<button class="botao" id="iniciar" onclick="iniciarJogo()">Iniciar</button>: Define um botão com a classe "botao", o ID "iniciar" e uma função JavaScript chamada "iniciarJogo()" quando o botão é clicado.
+
+<div class="imagem grid2 jogo1" id="jogo1"></div>: Define um elemento de imagem com a classe "imagem", "grid2" e "jogo1", e o ID "jogo1".
+
+</div>: Fecha a seção do jogo.
+
+<div id="historia">: Inicia a seção de história da página.
+
+<h2 id="titulo-historia"> História do MEMORY GAME CARDS BRASILEIRÃO 2023 </h2>: Define um subcabeçalho com o ID "titulo-historia" para a seção de história.
+
+<p> ...: Fornece informações sobre o jogo e sua relação com o Campeonato Brasileiro de 2023.
+
+<h3 id="encarar"> &nbsp;&nbsp;&nbsp;<strong> E aí torcedor, o que me diz? Vai encarar? </strong></h3>: Define um subcabeçalho com o ID "encarar" e um texto de desafio ao leitor.

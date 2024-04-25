@@ -1,0 +1,66 @@
+Olá pessoal,
+
+
+nesta semana vamos fazer alguns exercícios de fixação sobre DOM:
+
+
+Exercício 1: Criando um contador de cliques
+
+Objetivo: criar um contador de cliques usando JavaScript e manipulação do DOM.
+
+
+
+<div>
+
+
+  <button id="click-me">Clique aqui</button>
+
+
+  <p>Você clicou <span id="counter">0</span> vezes</p>
+
+
+</div>
+
+
+
+
+Exercício 2: Criando uma lista de tarefas
+
+
+Objetivo: criar uma lista de tarefas usando JavaScript e manipulação do DOM. Para pegar os valores dos inputs use a propriedade value
+
+
+
+<div>
+
+
+  <input type="text" id="new-task" placeholder="Digite uma nova tarefa">
+
+
+  <button id="add-task">Adicionar tarefa</button>
+
+
+  <ul id="task-list"></ul>
+
+
+</div>
+
+
+
+Exercício 3:
+
+ Utilize o exercício da Mariana, agora o usuário irá informar a quantidade através do formulário e o resultado deve ser inserido após um h1 escrito Música
+
+
+Exercício 4:
+
+Cire um formulário onde o usuário ira fornecer a url de uma imagem, esse imagem deve ser inserida após um h1 escrito Galeria. Insira a tag img  dentro de uma div. 
+
+Exercício 5:
+
+ Modifique o exercício anterior: Insira um botão com o escrito X abaixo da imagem inserida anteriormente. Ao clicar no botão toda a div deve ser removida
+
+Este é um exercício de revisão e não é necessário postar.
+
+Bons estudos!
+

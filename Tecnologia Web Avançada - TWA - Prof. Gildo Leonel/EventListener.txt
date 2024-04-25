@@ -1,0 +1,11 @@
+const imagem = document.querySelector("#imagem");
+const form = document.querySelector("#forms");
+const link = document.querySelector("#link");
+
+console.log(form);
+
+form.addEventListener('submit', event =>{
+    event.preventDefault(); 
+    const linkImg = link.value
+    imagem.setAttribute('src',linkImg);
+})

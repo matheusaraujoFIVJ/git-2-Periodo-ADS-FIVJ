@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Enfermeiro
+comment1.params=
+comment1.target=double\ salario()
+comment2.params=
+comment2.target=double\ DecimoTerceiro()
+comment3.params=
+comment3.target=double\ contribuicaoSindical()
+comment4.params=
+comment4.target=double\ adicionalPericulosidade()
+numComments=5

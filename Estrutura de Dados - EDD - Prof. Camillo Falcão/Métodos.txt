@@ -1,0 +1,194 @@
+public class Atleta
+{
+private int _Atleta;
+public int atleta
+{
+    get { return _Atleta; }
+    set { atleta = value; }
+}
+
+}
+
+======================
+recursividade bool
+static bool LernumeroPerfeito(int num, int divisor = 1, int soma = 0)
+    {
+        
+        if (divisor >= num)
+        {
+            return soma == num;
+        }
+        
+        if(num % divisor == 0)
+        {
+            soma += divisor;            
+        }
+
+        return LernumeroPerfeito (num, divisor + 1, soma);
+    
+    }
+
+==================================
+recursividade Função
+ static int MultiplicarNegativos(int[] vetor, int index)
+    {
+        if(index > vetor.Length)
+        {
+            return 0;
+        }
+            if (vetor[index] < 0)
+            {
+                vetor[index] *= -1;
+                return 1 + MultiplicarNegativos(vetor, index + 1);
+            }
+
+        else
+        {
+            return MultiplicarNegativos(vetor, index + 1);
+        }
+    }
+=============================
+
+recursividade Procedimento
+static void ImprimirDivisiveisPorDoisETres(int atual, int n)
+    {
+        if (atual <= n)
+        {
+            if (atual % 2 == 0 && atual % 3 == 0)
+            {
+                Console.WriteLine(atual);
+            }
+            ImprimirDivisiveisPorDoisETres(atual + 1, n);
+        }
+    }
+
+
+------------
+static int CalcularMontanteAposentadoria(double montante, double retiradaMensal, int meses)
+    {
+        if (montante >= retiradaMensal)
+        {
+            montante *= 1.0055;
+
+            montante -= retiradaMensal;
+
+            Console.WriteLine($"Mês {meses + 1}: Montante após retirada e correção: {montante:C}");
+        }
+
+        return (int)montante;
+    }
+
+================================
+
+metodo Bolha Procedimento com Do While
+static void metodoBolhaAtletas(int[] vet)
+    {
+        int trocas = 0;
+        bool trocar;
+
+        do
+        {
+            trocar = false;
+            for(int i = 0; i < vet.Length - 1; i++)
+            {
+                if(vet[i] > vet[i + 1])
+                {
+                    int j = vet[i];
+                    vet[i] = vet[i + 1];
+                    vet[i + 1] = j;
+                    
+                    trocas++;
+                    trocar = true;                    
+                }         
+            }
+        } while(trocar);
+
+======================================
+metodo Bolha Função com Do While
+static int OrdenarVetorPorBubbleSort(int[] vetor)
+    {
+        int trocas = 0;
+        bool trocou;
+
+        do
+        {
+            trocou = false;
+            for (int i = 0; i < vetor.Length - 1; i++)
+            {
+                if (vetor[i] > vetor[i + 1])
+                {
+                    //Trocar os elementos
+                    int temp = vetor[i];
+                    vetor[i] = vetor[i + 1];
+                    vetor[i + 1] = temp;
+
+                    trocas++;
+                    trocou = true;
+                }
+            }
+        } while (trocou);
+
+        return trocas;
+    }
+
+==============================
+Metodo Bolha com For
+static void Bubble(int[] vetor)
+    {
+        for (int i = 0; i < vetor.Length - 1; i++)
+        {
+            for (int j = 0; j < vetor.Length - 1 - i; j++)
+            {
+                if (vetor[j] > vetor[j + 1])
+                {
+                    var aux = vetor[j+1];
+                    vetor[j+1] = vetor[j];
+                    vetor[j] = aux;
+                }
+            }
+        }
+    }
+
+====================================
+metodo Ordernar por Selecao
+static void OrdenarPorSelecao(int[] vetor)
+    {
+        for (int i = 0; i < vetor.Length - 1; i++)
+        {
+            int indiceMenor = i;
+
+            for (int j = i + 1; j < vetor.Length; j++)
+            {
+                if (vetor[j] < vetor[indiceMenor])
+                {
+                    indiceMenor = j;
+                }
+            }
+
+            if (indiceMenor != i)
+            {
+                int temp = vetor[i];
+                vetor[i] = vetor[indiceMenor];
+                vetor[indiceMenor] = temp;
+            }
+        }
+    }
+=================================================
+metodo Ordernar por Insercao
+
+ {
+        for (int i = 1; i < vetor.Length; i++)
+        {
+            int chave = vetor[i];
+            int j = i - 1;
+
+            while (j >= 0 && vetor[j] > chave)
+            {
+                vetor[j + 1] = vetor[j];
+                j--;
+            }
+
+            vetor[j + 1] = chave;
+        }
+  }
+

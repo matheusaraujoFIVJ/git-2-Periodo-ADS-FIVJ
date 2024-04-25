@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Intervalo
+comment1.params=
+comment1.target=Intervalo()
+comment2.params=a
+comment2.target=void\ setA(int)
+comment3.params=
+comment3.target=int\ getA()
+comment4.params=b
+comment4.target=void\ setB(int)
+comment5.params=
+comment5.target=int\ getB()
+comment6.params=
+comment6.target=void\ imprimirImpar()
+numComments=7

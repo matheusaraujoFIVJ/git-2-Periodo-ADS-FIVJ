@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Concessionaria
+comment1.params=
+comment1.target=Concessionaria()
+comment2.params=modelo
+comment2.target=void\ setModelo(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getModelo()
+comment4.params=
+comment4.target=double\ getPrecoInicial()
+comment5.params=preco
+comment5.target=void\ setPreco(double)
+comment6.params=
+comment6.target=double\ precoTotal()
+comment7.params=
+comment7.target=double\ ipi()
+comment8.params=
+comment8.target=double\ importante()
+comment9.params=
+comment9.target=boolean\ ehImportante()
+numComments=10

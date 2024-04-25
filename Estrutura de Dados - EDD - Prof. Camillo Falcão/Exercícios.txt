@@ -1,0 +1,160 @@
+Exercício 1
+Faça um procedimento completo em C# que receba um número n inteiro e positivo. O
+procedimento deve imprimir todos os números do intervalo entre 0 e n que são
+divisíveis por 2 e por 3 (simultaneamente). Restrição: não utilize comandos de
+repetição.
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro positivo: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Números divisíveis por 2 e 3 no intervalo de 0 a " + n + ":");
+        ImprimirDivisiveisPor2e3(0, n);
+    }
+
+    static void ImprimirDivisiveisPor2e3(int atual, int n)
+    {
+        if (atual > n)
+            return;
+
+        if (atual % 2 == 0 && atual % 3 == 0)
+            Console.WriteLine(atual);
+
+        ImprimirDivisiveisPor2e3(atual + 1, n);
+    }
+}
+
+
+
+
+Exercício 2
+
+
+Questão 2: Faça uma função que receba um vetor de números inteiros por
+parâmetro e multiplique por -1 todos os elementos negativos desse vetor. A função
+deve retornar o número de elementos negativos encontrados. Restrição: não utilize
+comandos de repetição.
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] meuVetor = { 1, -2, 3, -4, 5 };
+        int numNegativos = MultiplicarNegativos(meuVetor);
+        Console.WriteLine($"Número de elementos negativos: {numNegativos}");
+        Console.WriteLine($"Vetor após multiplicar os negativos por -1: [{string.Join(", ", meuVetor)}]");
+    }
+
+    static int MultiplicarNegativos(int[] vetor)
+    {
+        int countNegativos = 0;
+
+        for (int i = 0; i < vetor.Length; i++)
+        {
+            if (vetor[i] < 0)
+            {
+                vetor[i] *= -1; // Multiplicando os valores negativos por -1
+                countNegativos++; // Incrementando o contador de negativos
+            }
+        }
+
+        return countNegativos; // Retornando o número de elementos negativos encontrados
+    }
+}
+
+
+
+
+
+
+
+Questão 3: Faça um procedimento que receba o montante reservado para a aposentadoria de uma pessoa 
+ e a quantia que ela pretende retirar por mês. O montante reservado é corrigido a cada mês com a taxa 
+ de 0,55%, aplicada logo após a retirada. O procedimento deve imprimir o montante (após a retirada e a correção),
+ mês a mês. O procedimento também deve imprimir o número de meses em que a pessoa conseguirá fazer a sua retirada. 
+Restrição: não utilize comandos de repetição.
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double montante = 100000; // Montante reservado para a aposentadoria
+        double retiradaPorMes = 500; // Quantia que será retirada por mês
+
+        RealizarRetiradas(montante, retiradaPorMes, 0);
+    }
+
+    static void RealizarRetiradas(double montante, double retiradaPorMes, int meses)
+    {
+        if (montante >= retiradaPorMes)
+        {
+            montante -= retiradaPorMes; // Realiza a retirada
+
+            Console.WriteLine($"Montante após {meses + 1} meses: {montante}");
+
+            // Aplica a correção no montante
+            montante *= 1 + 0.0055;
+
+            RealizarRetiradas(montante, retiradaPorMes, meses + 1); // Chamada recursiva para o próximo mês
+        }
+        else
+        {
+            Console.WriteLine($"Não é possível mais fazer retiradas após {meses} meses.");
+        }
+    }
+}
+
+
+
+
+Questão 4: Faça uma função que ordene um vetor de inteiros passado por
+parâmetro utilizando o método bolha e retorne o número de trocas realizadas.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] vetor = { 5, 3, 8, 2, 1, 7 };
+        int numTrocas = OrdenarVetorBolha(vetor);
+        Console.WriteLine($"Vetor ordenado: [{string.Join(", ", vetor)}]");
+        Console.WriteLine($"Número de trocas realizadas: {numTrocas}");
+    }
+
+    static int OrdenarVetorBolha(int[] vetor)
+    {
+        int n = vetor.Length;
+        int trocas = 0;
+
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (vetor[j] > vetor[j + 1])
+                {
+                    // Troca os elementos
+                    int temp = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = temp;
+                    trocas++;
+                }
+            }
+        }
+
+        return trocas;
+    }
+}

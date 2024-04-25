@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=RH
+comment1.params=
+comment1.target=double\ totalSindicato()
+comment2.params=
+comment2.target=double\ totalSalarioDoutor()
+comment3.params=
+comment3.target=RH()
+comment3.text=\n\ \ \ \ public\ boolean\ AposentadoriaEspecial(Professor\ func){\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ //if\ (\ func.getIdade()\ >\=\ 95\ &&\ func\ instanceof\ Professor\ ){\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (\ func.getIdade()\ >\=\ 95\ ){\n\ \ \ \ \ \ \ \ \ \ \ \ return\ true;\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ return\ false;\n\ \ \ \ }\n
+comment4.params=nome
+comment4.target=RH(java.lang.String)
+comment5.params=nome
+comment5.target=void\ setNome(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getNome()
+numComments=7

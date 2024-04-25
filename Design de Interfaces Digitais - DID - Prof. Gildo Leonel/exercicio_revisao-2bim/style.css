@@ -1,0 +1,327 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+  margin: 0;
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/* Promo section */
+
+.logo,
+.site-title {
+	text-align: center;
+}
+
+.logo {
+  margin-top: .3em;
+	font-size: 6em;
+}
+
+.site-title {
+	margin-top: -1em;
+	margin-bottom: 2em;
+}
+
+/* Splash section */
+
+.splash {
+	background: #FFF6E5;
+	padding-bottom: 2em;
+}
+
+.splash-content {
+	padding: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+	.splash-text {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	.splash-text p {
+		padding-top: 0;
+	}
+}
+
+/* Buckets section */
+
+.buckets {
+	padding: 2em 1em 1em;
+	background: #3E454C;
+}
+
+.buckets ul {
+	margin: 0;
+	padding: 0;
+}
+
+.buckets li {
+	margin-bottom: 1em;
+	background: white;
+	list-style-type: none;
+}
+
+.bucket {
+	padding: 1.5em;
+}
+
+/* More section */
+
+.more {
+	padding: 2em;
+}
+
+.more-content {
+	padding: 1.5em;
+}
+
+/* Twins section */
+
+.sidebar {
+	background: hsl(0, 0%, 90%);
+}
+
+.twin {
+	padding: 2em;
+	background: #2185C5;
+	color: white;
+}
+
+.twin:last-of-type {
+	background: #FF7F66;
+}
+
+.content-title {
+  padding: .5em;
+}
+
+/* Colophon section */
+.colophon {
+	padding: 2em;
+	background: hsl(0, 0%, 10%);
+	color: white;
+	text-align: center;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
+
+.view {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+
+
+
+/*--------------------------------------------------------------
+Calendar styles
+--------------------------------------------------------------*/
+
+.calendar {
+    margin: 2em;
+    padding: .5em;
+	border: 5px solid #41444B;
+	border-radius: 15px;
+}
+
+
+.day {
+	display: block;
+	padding: .5em;
+	border-bottom: 1px solid black;
+}
+
+.day-name,
+.previous,
+.next {
+	display: none;
+}
+
+.day:hover {
+	outline: 2px solid black;
+	z-index: 1;
+}
+
+.previous:hover,
+.next:hover {
+	outline: none;
+}
+
+
+/*--------------------------------------------------------------
+Use CSS Grid layout para criar o restante do documento, os breakpoints são em 50em
+e 65em, utilize a abordagem de mobile first
+--------------------------------------------------------------*/
+/*
+
+
+*/
+
+
+/*--------------------------------------------------------------
+Use flex para criar um layout de dois grupos, quando a tela estiver ao 
+menos 700px
+--------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+
+	.buckets ul{
+		display: flex;
+		gap: 4%;
+	}
+
+	.buckets ul li{
+		width: 48%;
+	}
+}
+
+
+/*--------------------------------------------------------------
+Melhore a responsividade do site ajustando as fontes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Use CSS Grid layout para criar o restante do documento, os breakpoints são em 50em.  Utilize a abordagem de mobile first
+--------------------------------------------------------------*/
+@media screen and (min-width: 50em) {
+	.view{
+		display:grid;
+		min-width: 100vw;
+		max-width: 100vw;
+		min-height: 100vh;
+		grid-template-columns: 1fr 5fr 1fr;
+		grid-template-areas:
+		"header header header"
+		"twin1 main twin2"
+		"footer footer footer"
+		;
+	}
+
+	.masthead{
+		grid-area: header;
+	}
+
+	.twin :first-child{
+		grid-area: twin1;
+	}
+
+	.twin :last-child{
+		grid-area: twin2;
+	}
+
+	.main-area{
+		grid-area: main;
+	}
+	
+	.colophon{
+		grid-area: footer;
+	}
+
+	.calendar-grid{
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		gap: 1rem;
+	}
+
+	.day-name, .previous, .next{
+		display: block;
+		border-bottom: 1px solid #41444B;
+	}
+	
+	.previous, .next{
+		color: #a6abb8;
+	}
+}
+
+
+

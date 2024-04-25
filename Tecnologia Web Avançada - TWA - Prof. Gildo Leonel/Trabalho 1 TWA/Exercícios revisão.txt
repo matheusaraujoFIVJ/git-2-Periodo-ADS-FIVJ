@@ -1,0 +1,166 @@
+Exercício 1
+ Criando um contador de cliques
+
+Objetivo: criar um contador de cliques usando JavaScript e manipulação do DOM.
+***
+
+HTML
+<div>
+  <button id="click-me">Clique aqui</button>
+  <p>Você clicou <span id="counter">0</span> vezes</p>
+</div>
+
+JS
+<script>
+  // Obtenha o botão e o contador pelo ID
+  const button = document.getElementById('click-me');
+  const counter = document.getElementById('counter');
+
+  // Inicialize o contador
+  let clickCount = 0;
+
+  // Adicione um ouvinte de evento de clique ao botão
+  button.addEventListener('click', function () {
+    // Aumente o contador em 1
+    clickCount++;
+
+    // Atualize o texto do contador com o novo valor
+    counter.textContent = clickCount;
+  });
+</script>
+
+
+****************************************************************************************
+Exercício 2 
+Exercício 2: Criando uma lista de tarefas
+
+
+Objetivo: criar uma lista de tarefas usando JavaScript e manipulação do DOM. Para pegar os valores dos inputs use a propriedade value
+***
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="new-task" placeholder="Digite uma nova tarefa">
+        <button id="add-task">Adicionar tarefa</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script>
+        // Obtém referências para os elementos HTML
+        const newTaskInput = document.getElementById('new-task');
+        const addTaskButton = document.getElementById('add-task');
+        const taskList = document.getElementById('task-list');
+
+        // Adiciona um ouvinte de evento para o botão "Adicionar tarefa"
+        addTaskButton.addEventListener('click', function() {
+            const taskText = newTaskInput.value; // Obtém o valor do input
+
+            if (taskText.trim() !== '') { // Verifica se o valor não está em branco
+                const listItem = document.createElement('li'); // Cria um elemento de lista
+                listItem.textContent = taskText; // Define o texto do elemento de lista
+
+                // Cria um botão para remover a tarefa
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remover';
+                removeButton.addEventListener('click', function() {
+                    taskList.removeChild(listItem); // Remove o item da lista
+                });
+
+                listItem.appendChild(removeButton); // Adiciona o botão de remoção à lista
+
+                taskList.appendChild(listItem); // Adiciona o item à lista
+
+                newTaskInput.value = ''; // Limpa o input
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+****************************************************************************************
+Exercício 4
+Crie um formulário onde o usuário ira fornecer a url de uma imagem, esse imagem deve ser inserida após um h1 escrito Galeria. Insira a tag img  dentro de uma div. 
+***
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Imagens</title>
+</head>
+<body>
+    <h1>Galeria</h1>
+    <form>
+        <label for="url">URL da imagem:</label>
+        <input type="text" id="url" placeholder="Cole a URL da imagem aqui" required>
+        <button type="button" onclick="adicionarImagem()">Adicionar Imagem</button>
+    </form>
+    <div id="galeria">
+        <!-- A imagem será inserida aqui -->
+    </div>
+
+    <script>
+        function adicionarImagem() {
+            const url = document.getElementById('url').value;
+            const galeria = document.getElementById('galeria');
+            
+            // Criar a tag de imagem
+            const imagem = document.createElement('img');
+            imagem.src = url;
+            
+            // Inserir a imagem na div da galeria
+            galeria.appendChild(imagem);
+            
+            // Limpar o campo de entrada
+            document.getElementById('url').value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+****************************************************************************************
+
+Exercício 5 
+ Modifique o exercício anterior: Insira um botão com o escrito X abaixo da imagem inserida anteriormente. Ao clicar no botão toda a div deve ser removida
+***
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="sua_imagem.jpg" alt="Sua imagem" id="image">
+        <button id="removeButton">X</button>
+    </div>
+
+    <script>
+        // Função para remover a div inteira ao clicar no botão "X"
+        document.getElementById("removeButton").addEventListener("click", function () {
+            var container = document.querySelector(".container");
+            container.parentNode.removeChild(container);
+        });
+    </script>
+</body>
+</html>
